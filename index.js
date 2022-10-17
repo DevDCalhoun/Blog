@@ -25,8 +25,13 @@ app.get('/', (req, res) => {
     res.render('home');
 })
 
-app.get('/blog', (req, res) => {
-    res.render('blog');
+app.get('/blog', async (req, res) => {
+    const blogpost = await BlogPost.find({});
+    res.render('blog', { blogpost });
+})
+
+app.get('/write', (req, res) => {
+    res.render('write');
 })
 
 app.get('/makeBlog', async (req, res) => {

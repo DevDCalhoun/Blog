@@ -1,0 +1,19 @@
+.post-container {
+    margin: 5%;
+    margin-top: 1%;
+}
+
+.blog-label {
+    font-size: 5em;
+}
+
+.blog-post {
+    display: block;
+    border-radius: 1em;
+}
+
+button {
+    margin-top: 0.5em;
+    margin-right: 1em;
+    float: right;
+}
