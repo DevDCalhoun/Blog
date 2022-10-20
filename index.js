@@ -11,6 +11,7 @@ db.once("open", () => {
 });
 
 const path = require('path');
+const router = require('../Development/Yelp-Camp/routes/users');
 
 const app = express();
 
@@ -19,7 +20,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 //used for use of stylesheets - sets path to public folder and gives access to styles
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + path.join('/public')));
 
 app.get('/', (req, res) => {
     res.render('home');
@@ -30,7 +31,7 @@ app.get('/blog', async (req, res) => {
     res.render('blog', { blogpost });
 })
 
-app.get('/write', (req, res) => {
+app.get('/blog/write', (req, res) => {
     res.render('write');
 })
 

@@ -1,3 +1,8 @@
 h1 {
     color: wheat;
 }
+
+.nav-element-write {
+    color: wheat;
+    float: right;
+}
