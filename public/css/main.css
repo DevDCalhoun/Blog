@@ -22,21 +22,25 @@ body {
     padding-right: 0.8em;
   }
 
-  .welcome-container {
-    margin-top: 4em; /* Sets margin to top to drop element to center */
-    padding-top: 1em; /* centers headers into the oval container */
-  }
 
-  .home-header {
-    margin: 0 0 0 4.4em; /* values decrease seperation between H1 elements and helps center by pushing left */
-    font-family: 'Inspiration', cursive;
-    font-size: 6em;
-  }
 
-  .oval-container {
-    border-radius: 60%;
-    box-shadow: 10px 10px 8px #888888;
-    background-color: whitesmoke;
-    opacity: 60%;
-    height: 18em;
+  @media only screen and (min-width: 1100px) {
+    .welcome-container {
+      margin-top: 4em; /* Sets margin to top to drop element to center */
+      padding-top: 1em; /* centers headers into the oval container */
+    }
+  
+    .home-header {
+      margin: 0 0 0 4.4em; /* values decrease seperation between H1 elements and helps center by pushing left */
+      font-family: 'Inspiration', cursive;
+      font-size: 6em;
+    }
+  
+    .oval-container {
+      border-radius: 60%;
+      box-shadow: 10px 10px 8px #888888;
+      background-color: whitesmoke;
+      opacity: 60%;
+      height: 18em;
+    }
   }

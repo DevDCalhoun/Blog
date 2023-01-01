@@ -1,7 +1,10 @@
-<link href="/css/main.css" rel="stylesheet" type="text/css">
+<link href="/css/main.css" rel="stylesheet" type="text/css" />
 
 <nav class="nav-bar">
-    <a class="nav-element" href="/">Home</a>
-    <a class="nav-element" href="/blog">Blog</a>
-    <a class="nav-element" href="/aboutme">About Me</a>
+  <a class="nav-element" href="/">Home</a>
+  <a class="nav-element" href="/blog">Blog</a>
+  <a class="nav-element" href="/aboutme">About Me</a>
+  <% if (showLogin) { %>
+  <a class="nav-element" href="/login">Login</a>
+  <% } %>
 </nav>
